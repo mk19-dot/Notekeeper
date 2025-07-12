@@ -1,0 +1,46 @@
+<!--<!DOCTYPE web-app PUBLIC-->
+<!-- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"-->
+<!-- "http://java.sun.com/dtd/web-app_2_3.dtd" >-->
+
+<!--<web-app>-->
+<!--  <display-name>Archetype Created Web Application</display-name>-->
+<!--</web-app>-->
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Note ToDo</display-name>
+
+  <!-- SaveNote Servlet -->
+  <servlet>
+    <servlet-name>SaveNote</servlet-name>
+    <servlet-class>com.servlets.saveNote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveNote</servlet-name>
+    <url-pattern>/saveNote</url-pattern>
+  </servlet-mapping>
+
+  <!-- DeleteNote Servlet -->
+  <servlet>
+    <servlet-name>DeleteNote</servlet-name>
+    <servlet-class>com.servlets.DeleteNote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteNote</servlet-name>
+    <url-pattern>/DeleteNote</url-pattern>
+  </servlet-mapping>
+
+<!-- updateNote Servlet -->
+  <servlet>
+    <servlet-name>UpdateNote</servlet-name>
+    <servlet-class>com.servlets.updateNote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateNote</servlet-name>
+    <url-pattern>/updateNote</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
